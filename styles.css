@@ -1,0 +1,182 @@
+/* -------------------------
+   Variables de color (más vivas)
+------------------------- */
+:root {
+  --primary: #6c63ff;
+  --primary-dark: #554ee2;
+  --secondary: #00d4ff;
+  --success: #1cc88a;
+  --warning: #f6c23e;
+  --danger: #e74a3b;
+
+  --bg-main: #f4f6fb;
+  --bg-card: #ffffff;
+  --text-main: #2e2e3a;
+  --text-muted: #6c757d;
+
+  --navbar-bg: linear-gradient(135deg, #6c63ff, #4e73df);
+}
+
+/* -------------------------
+   Estilos globales
+------------------------- */
+body {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: var(--text-main);
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------
+   Navbar moderna
+------------------------- */
+.navbar-dark {
+  background: linear-gradient(135deg, #000000, #2b61e0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+
+/* -------------------------
+   Cards modernas
+------------------------- */
+.card {
+  background: var(--bg-card);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.8rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 1.25rem;
+  border: none;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* -------------------------
+   Botones animados
+------------------------- */
+.btn {
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.45rem 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.4);
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, #f6c23e, #f4b619);
+  border: none;
+  color: #fff;
+}
+
+.btn-warning:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(246, 194, 62, 0.4);
+}
+
+/* -------------------------
+   Tablas modernas
+------------------------- */
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table thead th {
+  background: #eef1f7;
+  color: var(--text-muted);
+  font-weight: 700;
+  border: none;
+}
+
+.table tbody tr {
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background: #f1f4ff;
+  transform: scale(1.01);
+}
+
+/* -------------------------
+   Formularios modernos
+------------------------- */
+.form-label {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border: 1px solid #dcdff1;
+  padding: 0.55rem 0.75rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+}
+
+/* -------------------------
+   Contenedor principal
+------------------------- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* -------------------------
+   Animaciones suaves de entrada
+------------------------- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card,
+.table,
+form {
+  animation: fadeUp 0.6s ease both;
+}
+
+  
